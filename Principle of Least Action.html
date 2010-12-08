@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created by Wolfram Mathematica 8.0 : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Untitled
+ </title>
+ <link href="HTMLFiles/Principle of Least Action.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Title">
+ The Principle of Least Action
+</p>
+
+
+
+<p class='Subtitle' style='font-size: 10px;'>
+ Jason Gross, December 7, 2010
+</p>
+
+
+
+<p class="Section">
+ Introduction
+</p>
+
+
+
+<p class="Text">
+ Recall that we defined the <span style='font-style: italic;'>Lagrangian</span> to be the kinetic energy less potential energy, <span><span>L=K-U</span></span>, at a point.&nbsp;&nbsp;The action is then defined to be the integral of the Lagrangian along the path,
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_1.gif" alt="Principle of Least Action_1.gif" width="156" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ It is (remarkably!) true that, in any physical system, the path an object actually takes minimizes the action.&nbsp;&nbsp;It can be shown that the extrema of action occur at
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_2.gif" alt="Principle of Least Action_2.gif" width="92" height="36" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ This is called the Euler equation, or the Euler-Lagrange Equation.
+</p>
+
+
+
+<p class="Subsection">
+ Derivation
+</p>
+
+
+
+<p class="Section">
+ Least action: <span><span>F=m a</span></span>
+</p>
+
+
+
+<p class="Text">
+ Suppose we have the Newtonian kinetic energy, <span><span><img src="HTMLFiles/Principle of Least Action_3.gif" alt="Principle of Least Action_3.gif" width="61" height="33" style="vertical-align:middle" /></span></span>, and a potential that depends only on position, <span><span><img src="HTMLFiles/Principle of Least Action_4.gif" alt="Principle of Least Action_4.gif" width="49" height="15" style="vertical-align:middle" /></span></span>.&nbsp;&nbsp;Then the Euler-Lagrange equations tell us the following:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_5.gif" alt="Principle of Least Action_5.gif" width="261" height="73" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_6.gif" alt="Principle of Least Action_6.gif" width="145" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Rearrangement gives
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_7.gif" alt="Principle of Least Action_7.gif" width="61" height="74" style="vertical-align:middle" />
+</p>
+
+<p class="Section">
+ Least action with no potential
+</p>
+
+
+
+<p class="Text">
+ Suppose we have no potential, <span><em>U</em><em>=</em><em>0</em></span>.&nbsp;&nbsp;Then <span><em>L</em><em>=</em><em>K</em></span>, so the Euler-Lagrange equations become
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_8.gif" alt="Principle of Least Action_8.gif" width="96" height="36" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ For Newtonian kinetic energy, <span><span><img src="HTMLFiles/Principle of Least Action_9.gif" alt="Principle of Least Action_9.gif" width="61" height="33" style="vertical-align:middle" /></span></span>, this is just
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_10.gif" alt="Principle of Least Action_10.gif" width="58" height="73" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ This is a straight line, as expected.
+</p>
+
+
+
+<p class="Section">
+ Least action with gravitational potential
+</p>
+
+
+
+<p class="Text">
+ Suppose we have gravitational potential close to the surface of the earth, <span><span>U=m g y</span></span>, and Newtonian kinetic energy, <span><span><img src="HTMLFiles/Principle of Least Action_11.gif" alt="Principle of Least Action_11.gif" width="59" height="33" style="vertical-align:middle" /></span></span>.&nbsp;&nbsp;Then the Euler-Lagrange equations become
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_12.gif" alt="Principle of Least Action_12.gif" width="172" height="95" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ This is a parabola, as expected.
+</p>
+
+
+
+<p class="Section">
+ Constants of motion: Momenta
+</p>
+
+
+
+<p class="Text">
+ We may rearrange the Euler-Lagrange equations to obtain
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_13.gif" alt="Principle of Least Action_13.gif" width="71" height="36" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ If it happens that <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_14.gif" alt="Principle of Least Action_14.gif" width="39" height="36" style="vertical-align:middle" /></span></span>, then <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_15.gif" alt="Principle of Least Action_15.gif" width="38" height="36" style="vertical-align:middle" /></span></span> is also zero.&nbsp;&nbsp;This means that <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_16.gif" alt="Principle of Least Action_16.gif" width="19" height="36" style="vertical-align:middle" /></span></span> is a constant (with respect to time).&nbsp;&nbsp;We call <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_17.gif" alt="Principle of Least Action_17.gif" width="19" height="36" style="vertical-align:middle" /></span></span> a (conserved) momentum of the system.
+</p>
+
+
+
+<p class="Subsection">
+ Linear Momentum
+</p>
+
+
+
+<p class="Text">
+ By noting that Newtonian kinetic energy, <span><span><img src="HTMLFiles/Principle of Least Action_18.gif" alt="Principle of Least Action_18.gif" width="61" height="33" style="vertical-align:middle" /></span></span>, is independent of the time derivatives of position, if potential energy depends only on position, we can infer that <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_19.gif" alt="Principle of Least Action_19.gif" width="19" height="33" style="vertical-align:middle" /></span></span> (and, similarly, <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_20.gif" alt="Principle of Least Action_20.gif" width="19" height="36" style="vertical-align:middle" /></span></span> and <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_21.gif" alt="Principle of Least Action_21.gif" width="19" height="33" style="vertical-align:middle" /></span></span>) are constant.&nbsp;&nbsp;Then <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_22.gif" alt="Principle of Least Action_22.gif" width="127" height="33" style="vertical-align:middle" /></span></span>.&nbsp;&nbsp;This is just standard linear momentum, <span style='text-align: center;'><em>m</em><em> </em><em>v</em></span>.
+</p>
+
+
+
+<p class="Subsection">
+ Angular Momentum
+</p>
+
+
+
+<p class="Text">
+ Let us change to polar coordinates.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_23.gif" alt="Principle of Least Action_23.gif" width="446" height="72" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_24.gif" alt="Principle of Least Action_24.gif" width="139" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Using dot notation, this is
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_25.gif" alt="Principle of Least Action_25.gif" width="370" height="16" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_26.gif" alt="Principle of Least Action_26.gif" width="87" height="36" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Note that <span style='text-align: center;'><em>&theta;</em></span> does not appear in this expression.&nbsp;&nbsp;If potential energy is not a function of <span style='text-align: center;'><em>&theta;</em></span> (is only a function of <span style='text-align: center;'><em>r</em></span>), then <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_27.gif" alt="Principle of Least Action_27.gif" width="64" height="33" style="vertical-align:middle" /></span></span> is constant.&nbsp;&nbsp;This is standard angular momentum, <span style='text-align: center;'><span><img src="HTMLFiles/Principle of Least Action_28.gif" alt="Principle of Least Action_28.gif" width="129" height="17" style="vertical-align:middle" /></span></span>.
+</p>
+
+
+
+<p class="Section">
+ Classic Problem: Brachistochrone (&ldquo;shortest time&rdquo;)
+</p>
+
+
+
+<p class="Subsection">
+ Problem
+</p>
+
+
+
+<p class="Text">
+ A bead starts at <span><em>x</em><em>=</em><em>0</em></span>, <span><em>y</em><em>=</em><em>0</em></span>, and slides down a wire without friction, reaching a lower point <span><span><img src="HTMLFiles/Principle of Least Action_29.gif" alt="Principle of Least Action_29.gif" width="43" height="18" style="vertical-align:middle" /></span></span>.&nbsp;&nbsp;What shape should the wire be in order to have the bead reach <span><span><img src="HTMLFiles/Principle of Least Action_30.gif" alt="Principle of Least Action_30.gif" width="43" height="18" style="vertical-align:middle" /></span></span> in as little time as possible.
+</p>
+
+
+
+<p class="Subsection">
+ Solution
+</p>
+
+
+
+<p class="Subsubsection">
+ Idea
+</p>
+
+
+
+<p class="Text">
+ Use the Euler equation to minimize the time it takes to get from <span><span><img src="HTMLFiles/Principle of Least Action_31.gif" alt="Principle of Least Action_31.gif" width="35" height="15" style="vertical-align:middle" /></span></span> to <span><span><img src="HTMLFiles/Principle of Least Action_32.gif" alt="Principle of Least Action_32.gif" width="43" height="18" style="vertical-align:middle" /></span></span>.
+</p>
+
+
+
+<p class="Subsubsection">
+ Implementation
+</p>
+
+
+
+<p class="Text">
+ Letting <span><em><span class="doublestruck">d</span></em><em>s</em></span> be the infinitesimal distance element and <span><em>v</em></span> be the travel speed,
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_33.gif" alt="Principle of Least Action_33.gif" width="281" height="162" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Now we apply the Euler equation to <span><span><img src="HTMLFiles/Principle of Least Action_34.gif" alt="Principle of Least Action_34.gif" width="89" height="50" style="vertical-align:middle" /></span></span> and change <span><em>t</em><em>&rarr;</em><em>y</em></span>, <span><span><img src="HTMLFiles/Principle of Least Action_35.gif" alt="Principle of Least Action_35.gif" width="31" height="15" style="vertical-align:middle" /></span></span>.
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_36.gif" alt="Principle of Least Action_36.gif" width="264" height="177" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Squaring both sides and making a special choice for the constant gives
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_37.gif" alt="Principle of Least Action_37.gif" width="242" height="140" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ To solve this, change variables:
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_38.gif" alt="Principle of Least Action_38.gif" width="188" height="15" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_39.gif" alt="Principle of Least Action_39.gif" width="290" height="18" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_40.gif" alt="Principle of Least Action_40.gif" width="64" height="15" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_41.gif" alt="Principle of Least Action_41.gif" width="308" height="81" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Full solution: The brachistochrone is described by
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_42.gif" alt="Principle of Least Action_42.gif" width="95" height="46" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ There&rsquo;s no analytic solution, but we can compute them.
+</p>
+
+
+
+<p class="CellLabel">
+ In[70]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_43.gif" alt="Principle of Least Action_43.gif" width="1665" height="137" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[72]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_44.gif" alt="Principle of Least Action_44.gif" width="409" height="323" style="vertical-align:middle" />
+</p>
+
+<p class="Section">
+ Classic Problem: Catenary
+</p>
+
+
+
+<p class="Subsection">
+ Problem
+</p>
+
+
+
+<p class="Text">
+ Suppose we have a rope of length <span><em>l</em></span> and linear mass density <span><em>&lambda;</em></span>.&nbsp;&nbsp;Suppose we fix its ends at points <span><span><img src="HTMLFiles/Principle of Least Action_45.gif" alt="Principle of Least Action_45.gif" width="39" height="15" style="vertical-align:middle" /></span></span> and <span><span><img src="HTMLFiles/Principle of Least Action_46.gif" alt="Principle of Least Action_46.gif" width="43" height="18" style="vertical-align:middle" /></span></span>.&nbsp;&nbsp;What shape does the rope make, hanging under the influence of gravity?
+</p>
+
+
+
+<p class="Subsection">
+ Solution
+</p>
+
+
+
+<p class="Subsubsection">
+ Idea
+</p>
+
+
+
+<p class="Text">
+ Calculate the potential energy of the rope as a function of the curve, <span><em>y</em><em>(</em><em>x</em><em>)</em></span>, and minimize this quantity using the Euler-Lagrange equations.
+</p>
+
+
+
+<p class="Subsubsection">
+ Implementation
+</p>
+
+
+
+<p class="Text">
+ Suppose we have curve parameterized by <span><em>t</em></span>, <span><span>(x(t), y(t))</span></span>.&nbsp;&nbsp;The potential energy associated with this curve is
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_47.gif" alt="Principle of Least Action_47.gif" width="281" height="113" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Note that if we choose to factor <span><span><span class="doublestruck">d</span>s</span></span> the other way (for <span><em>y</em><em>'</em></span>), we get a mess.
+</p>
+
+
+
+<p class="Text">
+ Now we apply the Euler-Lagrange equation to <span><span><img src="HTMLFiles/Principle of Least Action_48.gif" alt="Principle of Least Action_48.gif" width="110" height="23" style="vertical-align:middle" /></span></span> and change <span><em>t</em><em>&rarr;</em><em>y</em></span>, <span><span><img src="HTMLFiles/Principle of Least Action_49.gif" alt="Principle of Least Action_49.gif" width="31" height="15" style="vertical-align:middle" /></span></span>.
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_50.gif" alt="Principle of Least Action_50.gif" width="100" height="126" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Since <span><span><img src="HTMLFiles/Principle of Least Action_51.gif" alt="Principle of Least Action_51.gif" width="40" height="33" style="vertical-align:middle" /></span></span>, <span><span><img src="HTMLFiles/Principle of Least Action_52.gif" alt="Principle of Least Action_52.gif" width="22" height="33" style="vertical-align:middle" /></span></span> is constant, say <span><span><img src="HTMLFiles/Principle of Least Action_53.gif" alt="Principle of Least Action_53.gif" width="144" height="44" style="vertical-align:middle" /></span></span>.&nbsp;&nbsp;Then
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_54.gif" alt="Principle of Least Action_54.gif" width="126" height="43" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Using the fact that
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_55.gif" alt="Principle of Least Action_55.gif" width="171" height="47" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ integration of <span><em>x</em><em>'</em></span> gives
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_56.gif" alt="Principle of Least Action_56.gif" width="127" height="30" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ where <span><em>b</em></span> is a constant of integration.
+</p>
+
+
+
+<p class="Text">
+ Plotting this for <span><em>a</em><em>=</em><em>1</em></span>, <span><em>b</em><em>=</em><em>0</em></span> gives:
+</p>
+
+
+
+<p class="CellLabel">
+ In[19]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_57.gif" alt="Principle of Least Action_57.gif" width="534" height="106" style="vertical-align:middle" />
+</p>
+
+<p class="CellLabel">
+ Out[19]=
+</p>
+
+
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_58.gif" alt="Principle of Least Action_58.gif" width="409" height="385" style="vertical-align:middle" />
+</p>
+
+<p class="Section">
+ Problem: Bead on a Ring
+</p>
+
+
+
+<p class="Text">
+ From 8.033 Quiz #2
+</p>
+
+
+
+<p class="Subsection">
+ Problem
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_59.gif" alt="Principle of Least Action_59.gif" width="596" height="415" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ A bead of mass <span><em>m</em></span> slides without friction on a circular hoop of radius <span><em>R</em></span>. The angle <span><em>&theta;</em></span> is defined so that when the bead is at the bottom of the hoop, <span><em>&theta;</em><em>=</em><em>0</em></span>. The hoop is spun about its vertical axis with angular velocity <span><em>&omega;</em></span>. Gravity acts downward with acceleration <span><em>g</em></span>.<br />Find an equation describing how <span><em>&theta;</em></span> evolves with time.<br />Find the minimum value of <span><em>&omega;</em></span> for the bead to be in equilibrium at some value of <span><em>&theta;</em></span> other than zero.<br />(&ldquo;equilibrium&rdquo; means that <span><span><img src="HTMLFiles/Principle of Least Action_60.gif" alt="Principle of Least Action_60.gif" width="5" height="15" style="vertical-align:middle" /></span></span> and <span><span><img src="HTMLFiles/Principle of Least Action_61.gif" alt="Principle of Least Action_61.gif" width="5" height="22" style="vertical-align:middle" /></span></span> are both zero.) How large must <span><em>&omega;</em></span> be in order to make <span><span>&theta;=&pi;/2</span></span>?
+</p>
+
+
+
+<p class="Subsection">
+ Solution
+</p>
+
+
+
+<p class="Text">
+ The general Lagrangian for the object in Cartesian coordinates is
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_62.gif" alt="Principle of Least Action_62.gif" width="543" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_63.gif" alt="Principle of Least Action_63.gif" width="196" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Converting to polar coordinates, and using the constraints that <span><span>&phi;=&omega; t</span></span> and <span><em>r</em><em>=</em><em>R</em></span>, using the conversion
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_64.gif" alt="Principle of Least Action_64.gif" width="97" height="54" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ gives
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_65.gif" alt="Principle of Least Action_65.gif" width="1442" height="60" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_66.gif" alt="Principle of Least Action_66.gif" width="363" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_67.gif" alt="Principle of Least Action_67.gif" width="355" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_68.gif" alt="Principle of Least Action_68.gif" width="214" height="36" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Finding the minimum value of <span><em>&omega;</em></span> for the bead to be in equilibrium gives
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_69.gif" alt="Principle of Least Action_69.gif" width="976" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_70.gif" alt="Principle of Least Action_70.gif" width="196" height="36" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_71.gif" alt="Principle of Least Action_71.gif" width="72" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ In order for this to have a solution, we must have 
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_72.gif" alt="Principle of Least Action_72.gif" width="53" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ If <span><span>&theta;=&pi;/2</span></span>, then <span><span>cos(&theta;)=0</span></span>, so <span><em>&omega;</em><em>=</em><em>&infin;</em></span>.
+</p>
+
+
+
+<p class="Section">
+ Problem 11.8: K &amp; K 8.12
+</p>
+
+
+
+<p class="Subsection">
+ Problem
+</p>
+
+
+
+<p class="Text">
+ A pendulum is rigidly fixed to an axle held by two supports so that it can only swing in a plane perpendicular to the axle. The pendulum consists of a mass <span><em>m</em></span> attached to a massless rod of length <span><em>l</em></span>. The supports are mounted on a platform which rotates with constant angular velocity <span><em>&Omega;</em></span>. Find the pendulum&rsquo;s frequency assuming the amplitude is small.
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_73.gif" alt="Principle of Least Action_73.gif" width="250" height="159" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Solution by torque
+</p>
+
+
+
+<p class="Text">
+ (From the problem set solutions)
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_74.gif" alt="Principle of Least Action_74.gif" width="465" height="288" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ The torque about the pivot point is
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_75.gif" alt="Principle of Least Action_75.gif" width="49" height="18" style="vertical-align:middle" />
+</p>
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_76.gif" alt="Principle of Least Action_76.gif" width="209" height="25" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ The centrifugal effective force is
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_77.gif" alt="Principle of Least Action_77.gif" width="109" height="17" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ For small angles, <span><span>sin(&theta;)=&theta;</span></span>, <span><span>cos(&theta;)=1</span></span>.&nbsp;&nbsp;Then equation (1) becomes
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_78.gif" alt="Principle of Least Action_78.gif" width="145" height="123" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ If <span><span><img src="HTMLFiles/Principle of Least Action_79.gif" alt="Principle of Least Action_79.gif" width="41" height="30" style="vertical-align:middle" /></span></span>, the motion is no longer harmonic.
+</p>
+
+
+
+<p class="Subsection">
+ Solution by least action
+</p>
+
+
+
+<p class="Text">
+ The general Lagrangian for the object in Cartesian coordinates is
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_80.gif" alt="Principle of Least Action_80.gif" width="543" height="32" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_81.gif" alt="Principle of Least Action_81.gif" width="196" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Converting to polar coordinates, and using the constraints that <span><span>&phi;=&Omega; t</span></span> and <span><em>r</em><em>=</em><em>&#8467;</em></span>, using the conversion
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_82.gif" alt="Principle of Least Action_82.gif" width="95" height="54" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ gives
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_83.gif" alt="Principle of Least Action_83.gif" width="1428" height="60" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_84.gif" alt="Principle of Least Action_84.gif" width="350" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_85.gif" alt="Principle of Least Action_85.gif" width="347" height="33" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <img src="HTMLFiles/Principle of Least Action_86.gif" alt="Principle of Least Action_86.gif" width="212" height="36" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Note that this is, after minor changes of variable, the <span style='font-style: italic;'>exact</span> same equation that we found in the previous problem.&nbsp;&nbsp;We should(&rsquo;ve) expect(ed) this.<br />Making the first order approximation that <span><em>&theta;</em><em>&asymp;</em><em>0</em></span> (Taylor expanding around <span><em>&theta;</em><em>=</em><em>0</em></span> to the first order), we get 
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_87.gif" alt="Principle of Least Action_87.gif" width="118" height="30" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ This is the differential equation for a harmonic oscillator, with 
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action_88.gif" alt="Principle of Least Action_88.gif" width="82" height="39" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ If <span><span><img src="HTMLFiles/Principle of Least Action_89.gif" alt="Principle of Least Action_89.gif" width="41" height="30" style="vertical-align:middle" /></span></span>, the motion is no longer harmonic.
+</p>
+
+
+
+<p class="CellLabel">
+ In[52]:=
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action_90.gif" alt="Principle of Least Action_90.gif" width="1412" height="37" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/products/mathematica/" style="color:#000; text-decoration:none;">
+  <img src="HTMLFiles/spikeyIcon.png" alt="Spikey" width="20" height="21" style="padding-right:2px; border:0px solid white; vertical-align:middle;" />
+  <span style="color:#555555">Created with</span> Wolfram <span style="font-style: italic;">Mathematica</span> 8.0
+ </a>
+</div>
+</body>
+
+</html>
