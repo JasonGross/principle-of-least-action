@@ -1,0 +1,3523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="HTMLFiles/pmathml.xsl"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  Principle of Least Action.cdf
+ </title>
+ <link href="HTMLFiles/Principle of Least Action MathML.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Title">
+ The Principle of Least Action
+</p>
+
+
+
+<p class='Subtitle' style='font-size: 10px;'>
+ Jason Gross, December 7, 2010<br />Last Updated September 23, 2023
+</p>
+
+
+
+<p class="Section">
+ Introduction
+</p>
+
+
+
+<p class="Text">
+ Recall that we defined the <span style='font-style: italic;'>Lagrangian</span> to be the kinetic energy less potential energy, <span><span>L=K-U</span></span>, at a point.&nbsp;&nbsp;The action is then defined to be the integral of the Lagrangian along the path,
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>S</mi>
+  <mo>&#63449;</mo>
+  <mrow>
+   <msubsup>
+    <mo>&Integral;</mo>
+    <msub>
+     <mi>t</mi>
+     <mn>0</mn>
+    </msub>
+    <msub>
+     <mi>t</mi>
+     <mn>1</mn>
+    </msub>
+   </msubsup>
+   <mrow>
+    <mi>L</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mo>&DifferentialD;</mo>
+     <mi>t</mi>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>&#63449;</mo>
+  <mrow>
+   <mrow>
+    <msubsup>
+     <mo>&Integral;</mo>
+     <msub>
+      <mi>t</mi>
+      <mn>0</mn>
+     </msub>
+     <msub>
+      <mi>t</mi>
+      <mn>1</mn>
+     </msub>
+    </msubsup>
+    <mi>K</mi>
+   </mrow>
+   <mo>-</mo>
+   <mrow>
+    <mi>U</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mo>&DifferentialD;</mo>
+     <mi>t</mi>
+    </mrow>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ It is (remarkably!) true that, in any physical system, the path an object actually takes minimizes the action.&nbsp;&nbsp;It can be shown that the extrema of action occur at
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mfrac>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mi>L</mi>
+    </mrow>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mi>q</mi>
+    </mrow>
+   </mfrac>
+   <mo>-</mo>
+   <mrow>
+    <mfrac>
+     <mo>&DifferentialD;</mo>
+     <mrow>
+      <mo>&DifferentialD;</mo>
+      <mi>t</mi>
+     </mrow>
+    </mfrac>
+    <mfrac>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mi>L</mi>
+     </mrow>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mover>
+       <mi>q</mi>
+       <mo>.</mo>
+      </mover>
+     </mrow>
+    </mfrac>
+   </mrow>
+  </mrow>
+  <mo>&#63449;</mo>
+  <mn>0</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ This is called the Euler equation, or the Euler-Lagrange Equation.
+</p>
+
+
+
+<p class="Subsection">
+ Derivation
+</p>
+
+
+
+<p class="Section">
+ Least action: <span><span>F=m a</span></span>
+</p>
+
+
+
+<p class="Text">
+ Suppose we have the Newtonian kinetic energy, <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>K</mi>
+  <mtext> </mtext>
+  <mo>=</mo>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mi>v</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </mrow>
+</math></span></span>, and a potential that depends only on position, <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>U</mi>
+  <mo>=</mo>
+  <mrow>
+   <mi>U</mi>
+   <mo>&ApplyFunction;</mo>
+   <mo>(</mo>
+   <mover>
+    <mi>r</mi>
+    <mo>&RightVector;</mo>
+   </mover>
+   <mo>)</mo>
+  </mrow>
+ </mrow>
+</math></span></span>.&nbsp;&nbsp;Then the Euler-Lagrange equations tell us the following:
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action MathML_1.gif" alt="Principle of Least Action MathML_1.gif" width="289" height="74" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mrow>
+     <msup>
+      <mi>U</mi>
+      <mo>&prime;</mo>
+     </msup>
+     <mo>[</mo>
+     <mrow>
+      <mi>r</mi>
+      <mo>[</mo>
+      <mi>t</mi>
+      <mo>]</mo>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+   <mo>-</mo>
+   <mrow>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <msup>
+      <mi>r</mi>
+      <mi>&prime;&prime;</mi>
+     </msup>
+     <mo>[</mo>
+     <mi>t</mi>
+     <mo>]</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>&Equal;</mo>
+  <mn>0</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Rearrangement gives
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_2.gif" alt="Principle of Least Action MathML_2.gif" width="65" height="57" style="vertical-align:middle" />
+</p>
+
+<p class="Section">
+ Least action with no potential
+</p>
+
+
+
+<p class="Text">
+ Suppose we have no potential, <span><em>U</em><em>=</em><em>0</em></span>.&nbsp;&nbsp;Then <span><em>L</em><em>=</em><em>K</em></span>, so the Euler-Lagrange equations become
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mfrac>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mi>K</mi>
+    </mrow>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mi>q</mi>
+    </mrow>
+   </mfrac>
+   <mo>-</mo>
+   <mrow>
+    <mfrac>
+     <mo>&DifferentialD;</mo>
+     <mrow>
+      <mo>&DifferentialD;</mo>
+      <mi>t</mi>
+     </mrow>
+    </mfrac>
+    <mfrac>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mi>K</mi>
+     </mrow>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mover>
+       <mi>q</mi>
+       <mo>.</mo>
+      </mover>
+     </mrow>
+    </mfrac>
+   </mrow>
+  </mrow>
+  <mo>&#63449;</mo>
+  <mn>0</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ For Newtonian kinetic energy, <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>K</mi>
+  <mtext> </mtext>
+  <mo>=</mo>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mover>
+     <mi>x</mi>
+     <mo>.</mo>
+    </mover>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </mrow>
+</math></span></span>, this is just
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_3.gif" alt="Principle of Least Action MathML_3.gif" width="63" height="79" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ This is a straight line, as expected.
+</p>
+
+
+
+<p class="Section">
+ Least action with gravitational potential
+</p>
+
+
+
+<p class="Text">
+ Suppose we have gravitational potential close to the surface of the earth, <span><span>U=m g y</span></span>, and Newtonian kinetic energy, <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>K</mi>
+  <mo>=</mo>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mover>
+     <mi>y</mi>
+     <mo>.</mo>
+    </mover>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </mrow>
+</math></span></span>.&nbsp;&nbsp;Then the Euler-Lagrange equations become
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_4.gif" alt="Principle of Least Action MathML_4.gif" width="180" height="94" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ This is a parabola, as expected.
+</p>
+
+
+
+<p class="Section">
+ Constants of motion: Momenta
+</p>
+
+
+
+<p class="Text">
+ We may rearrange the Euler-Lagrange equations to obtain
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>L</mi>
+   </mrow>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>q</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+   <mfrac>
+    <mo>&DifferentialD;</mo>
+    <mrow>
+     <mo>&DifferentialD;</mo>
+     <mi>t</mi>
+    </mrow>
+   </mfrac>
+   <mfrac>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mi>L</mi>
+    </mrow>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mover>
+      <mi>q</mi>
+      <mo>.</mo>
+     </mover>
+    </mrow>
+   </mfrac>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ If it happens that <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>L</mi>
+   </mrow>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>q</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mn>0</mn>
+ </mrow>
+</math></span></span>, then <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mfrac>
+   <mo>&DifferentialD;</mo>
+   <mrow>
+    <mo>&DifferentialD;</mo>
+    <mi>t</mi>
+   </mrow>
+  </mfrac>
+  <mfrac>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>L</mi>
+   </mrow>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mover>
+     <mi>q</mi>
+     <mo>.</mo>
+    </mover>
+   </mrow>
+  </mfrac>
+ </mrow>
+</math></span></span> is also zero.&nbsp;&nbsp;This means that <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mfrac>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mi>L</mi>
+  </mrow>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mover>
+    <mi>q</mi>
+    <mo>.</mo>
+   </mover>
+  </mrow>
+ </mfrac>
+</math></span></span> is a constant (with respect to time).&nbsp;&nbsp;We call <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mfrac>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mi>L</mi>
+  </mrow>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mover>
+    <mi>q</mi>
+    <mo>.</mo>
+   </mover>
+  </mrow>
+ </mfrac>
+</math></span></span> a (conserved) momentum of the system.
+</p>
+
+
+
+<p class="Subsection">
+ Linear Momentum
+</p>
+
+
+
+<p class="Text">
+ By noting that Newtonian kinetic energy, <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>K</mi>
+  <mtext> </mtext>
+  <mo>=</mo>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mi>v</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </mrow>
+</math></span></span>, is independent of the time derivatives of position, if potential energy depends only on position, we can infer that <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mfrac>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mi>L</mi>
+  </mrow>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mover>
+    <mi>x</mi>
+    <mo>.</mo>
+   </mover>
+  </mrow>
+ </mfrac>
+</math></span></span> (and, similarly, <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mfrac>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mi>L</mi>
+  </mrow>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mover>
+    <mi>y</mi>
+    <mo>.</mo>
+   </mover>
+  </mrow>
+ </mfrac>
+</math></span></span> and <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mfrac>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mi>L</mi>
+  </mrow>
+  <mrow>
+   <mo>&PartialD;</mo>
+   <mover>
+    <mi>z</mi>
+    <mo>.</mo>
+   </mover>
+  </mrow>
+ </mfrac>
+</math></span></span>) are constant.&nbsp;&nbsp;Then <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>L</mi>
+   </mrow>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mover>
+     <mi>x</mi>
+     <mo>.</mo>
+    </mover>
+   </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+   <mrow>
+    <mfrac>
+     <mo>&PartialD;</mo>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mover>
+       <mi>x</mi>
+       <mo>.</mo>
+      </mover>
+     </mrow>
+    </mfrac>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mfrac>
+       <mn>1</mn>
+       <mn>2</mn>
+      </mfrac>
+      <mo>&InvisibleTimes;</mo>
+      <mi>m</mi>
+      <mo>&InvisibleTimes;</mo>
+      <msup>
+       <mover>
+        <mi>x</mi>
+        <mo>.</mo>
+       </mover>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>=</mo>
+   <mrow>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mover>
+     <mi>x</mi>
+     <mo>.</mo>
+    </mover>
+   </mrow>
+  </mrow>
+ </mrow>
+</math></span></span>.&nbsp;&nbsp;This is just standard linear momentum, <span style='text-align: center;'><em>m</em><em> </em><em>v</em></span>.
+</p>
+
+
+
+<p class="Subsection">
+ Angular Momentum
+</p>
+
+
+
+<p class="Text">
+ Let us change to polar coordinates.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action MathML_5.gif" alt="Principle of Least Action MathML_5.gif" width="455" height="71" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mrow>
+     <msup>
+      <mi>r</mi>
+      <mo>&prime;</mo>
+     </msup>
+     <mo>(</mo>
+     <mi>t</mi>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>+</mo>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mrow>
+     <mi>r</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>t</mi>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mrow>
+     <msup>
+      <mi>&theta;</mi>
+      <mo>&prime;</mo>
+     </msup>
+     <mo>(</mo>
+     <mi>t</mi>
+     <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Using dot notation, this is
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mrow>
+    <mi>K</mi>
+    <mo>/.</mo>
+    <mrow>
+     <mrow>
+      <mrow>
+       <mi>r_</mi>
+       <mo>'</mo>
+      </mrow>
+      <mo>[</mo>
+      <mi>t</mi>
+      <mo>]</mo>
+     </mrow>
+     <mo>&rightarrow;</mo>
+     <mrow>
+      <mi>OverDot</mi>
+      <mo>[</mo>
+      <mi>r</mi>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mo>/.</mo>
+   <mrow>
+    <mrow>
+     <mi>r_</mi>
+     <mo>[</mo>
+     <mi>t</mi>
+     <mo>]</mo>
+    </mrow>
+    <mo>&rightarrow;</mo>
+    <mi>r</mi>
+   </mrow>
+  </mrow>
+  <mo>//</mo>
+  <mi>TraditionalForm</mi>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mover>
+     <mi>&theta;</mi>
+     <mo>.</mo>
+    </mover>
+    <mn>2</mn>
+   </msup>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mi>r</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+  <mo>+</mo>
+  <mfrac>
+   <mrow>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mover>
+      <mi>r</mi>
+      <mo>.</mo>
+     </mover>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+   <mn>2</mn>
+  </mfrac>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Note that <span style='text-align: center;'><em>&theta;</em></span> does not appear in this expression.&nbsp;&nbsp;If potential energy is not a function of <span style='text-align: center;'><em>&theta;</em></span> (is only a function of <span style='text-align: center;'><em>r</em></span>), then <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>L</mi>
+   </mrow>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mover>
+     <mi>&theta;</mi>
+     <mo>.</mo>
+    </mover>
+   </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mrow>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mi>r</mi>
+    <mn>2</mn>
+   </msup>
+   <mo>&InvisibleTimes;</mo>
+   <mover>
+    <mi>&theta;</mi>
+    <mo>.</mo>
+   </mover>
+   <mtext> </mtext>
+  </mrow>
+ </mrow>
+</math></span></span> is constant.&nbsp;&nbsp;This is standard angular momentum, <span style='text-align: center;'><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mi>r</mi>
+    <mn>2</mn>
+   </msup>
+   <mo>&InvisibleTimes;</mo>
+   <mi>&omega;</mi>
+  </mrow>
+  <mo>=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mrow>
+    <mi>r</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>r</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>&omega;</mi>
+   </mrow>
+   <mo>=</mo>
+   <mrow>
+    <mi>r</mi>
+    <mo>&times;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>v</mi>
+   </mrow>
+  </mrow>
+ </mrow>
+</math></span></span>.
+</p>
+
+
+
+<p class="Section">
+ Classic Problem: Brachistochrone (&ldquo;shortest time&rdquo;)
+</p>
+
+
+
+<p class="Subsection">
+ Problem
+</p>
+
+
+
+<p class="Text">
+ A bead starts at <span><em>x</em><em>=</em><em>0</em></span>, <span><em>y</em><em>=</em><em>0</em></span>, and slides down a wire without friction, reaching a lower point <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>x</mi>
+    <mi>f</mi>
+   </msub>
+   <mo>,</mo>
+   <msub>
+    <mi>y</mi>
+    <mi>f</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</math></span></span>.&nbsp;&nbsp;What shape should the wire be in order to have the bead reach <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>x</mi>
+    <mi>f</mi>
+   </msub>
+   <mo>,</mo>
+   <msub>
+    <mi>y</mi>
+    <mi>f</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</math></span></span> in as little time as possible.
+</p>
+
+
+
+<p class="Subsection">
+ Solution
+</p>
+
+
+
+<p class="Subsubsection">
+ Idea
+</p>
+
+
+
+<p class="Text">
+ Use the Euler equation to minimize the time it takes to get from <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>x</mi>
+    <mi>i</mi>
+   </msub>
+   <mo>,</mo>
+   <msub>
+    <mi>y</mi>
+    <mi>i</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</math></span></span> to <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>x</mi>
+    <mi>f</mi>
+   </msub>
+   <mo>,</mo>
+   <msub>
+    <mi>y</mi>
+    <mi>f</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</math></span></span>.
+</p>
+
+
+
+<p class="Subsubsection">
+ Implementation
+</p>
+
+
+
+<p class="Text">
+ Letting <span><em><span class="doublestruck">d</span></em><em>s</em></span> be the infinitesimal distance element and <span><em>v</em></span> be the travel speed,
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_6.gif" alt="Principle of Least Action MathML_6.gif" width="287" height="164" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Now we apply the Euler equation to <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>f</mi>
+  <mo>=</mo>
+  <msqrt>
+   <mfrac>
+    <mrow>
+     <mn>1</mn>
+     <mo>+</mo>
+     <msup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>x</mi>
+        <mo>'</mo>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+    <mrow>
+     <mn>2</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mi>g</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>y</mi>
+    </mrow>
+   </mfrac>
+  </msqrt>
+ </mrow>
+</math></span></span> and change <span><em>t</em><em>&rarr;</em><em>y</em></span>, <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mover>
+   <mi>x</mi>
+   <mo>.</mo>
+  </mover>
+  <mo>&rightarrow;</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo>'</mo>
+  </mrow>
+ </mrow>
+</math></span></span>.
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_7.gif" alt="Principle of Least Action MathML_7.gif" width="277" height="182" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Squaring both sides and making a special choice for the constant gives
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_8.gif" alt="Principle of Least Action MathML_8.gif" width="232" height="141" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ To solve this, change variables:
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mi>y</mi>
+   <mo>=</mo>
+   <mrow>
+    <mi>A</mi>
+    <mo>&ApplyFunction;</mo>
+    <mo>(</mo>
+    <mrow>
+     <mn>1</mn>
+     <mo>-</mo>
+     <mrow>
+      <mi>cos</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>,</mo>
+  <mtext>      </mtext>
+  <mrow>
+   <mrow>
+    <mo>&DifferentialD;</mo>
+    <mi>y</mi>
+   </mrow>
+   <mo>=</mo>
+   <mrow>
+    <mi>A</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mi>sin</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>&theta;</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mo>&DifferentialD;</mo>
+     <mi>&theta;</mi>
+    </mrow>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>FullSimplify</mi>
+  <mo>[</mo>
+  <mrow>
+   <mrow>
+    <mrow>
+     <mn>2</mn>
+     <mo>&InvisibleTimes;</mo>
+     <mi>A</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>y</mi>
+    </mrow>
+    <mo>-</mo>
+    <msup>
+     <mi>y</mi>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+   <mo>/.</mo>
+   <mrow>
+    <mi>y</mi>
+    <mo>&rightarrow;</mo>
+    <mrow>
+     <mi>A</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mo>(</mo>
+      <mrow>
+       <mn>1</mn>
+       <mo>-</mo>
+       <mrow>
+        <mi>Cos</mi>
+        <mo>[</mo>
+        <mi>&theta;</mi>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+  </mrow>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <msup>
+   <mi>A</mi>
+   <mn>2</mn>
+  </msup>
+  <mo>&InvisibleTimes;</mo>
+  <msup>
+   <mrow>
+    <mi>Sin</mi>
+    <mo>[</mo>
+    <mi>&theta;</mi>
+    <mo>]</mo>
+   </mrow>
+   <mn>2</mn>
+  </msup>
+ </mrow>
+</math>
+</p>
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_9.gif" alt="Principle of Least Action MathML_9.gif" width="329" height="84" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Full solution: The brachistochrone is described by
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mi>x</mi>
+   <mo>=</mo>
+   <mrow>
+    <mi>A</mi>
+    <mo>&ApplyFunction;</mo>
+    <mo>(</mo>
+    <mrow>
+     <mi>&theta;</mi>
+     <mo>-</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>&InvisibleTimes;</mo>
+  <mtext>&#62371;</mtext>
+  <mrow>
+   <mi>y</mi>
+   <mo>=</mo>
+   <mrow>
+    <mi>A</mi>
+    <mo>&ApplyFunction;</mo>
+    <mo>(</mo>
+    <mrow>
+     <mn>1</mn>
+     <mo>-</mo>
+     <mrow>
+      <mi>cos</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ There&rsquo;s no analytic solution, but we can compute them.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action MathML_10.gif" alt="Principle of Least Action MathML_10.gif" width="1714" height="130" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.embed('HTMLFiles/Principle of Least Action MathML_11.cdf', 0, 0);
+</script>
+</p>
+
+<p class="Section">
+ Classic Problem: Catenary
+</p>
+
+
+
+<p class="Subsection">
+ Problem
+</p>
+
+
+
+<p class="Text">
+ Suppose we have a rope of length <span><em>l</em></span> and linear mass density <span><em>&lambda;</em></span>.&nbsp;&nbsp;Suppose we fix its ends at points <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>x</mi>
+    <mn>0</mn>
+   </msub>
+   <mo>,</mo>
+   <msub>
+    <mi>y</mi>
+    <mn>0</mn>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</math></span></span> and <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mo>(</mo>
+  <mrow>
+   <msub>
+    <mi>x</mi>
+    <mi>f</mi>
+   </msub>
+   <mo>,</mo>
+   <msub>
+    <mi>y</mi>
+    <mi>f</mi>
+   </msub>
+  </mrow>
+  <mo>)</mo>
+ </mrow>
+</math></span></span>.&nbsp;&nbsp;What shape does the rope make, hanging under the influence of gravity?
+</p>
+
+
+
+<p class="Subsection">
+ Solution
+</p>
+
+
+
+<p class="Subsubsection">
+ Idea
+</p>
+
+
+
+<p class="Text">
+ Calculate the potential energy of the rope as a function of the curve, <span><em>y</em><em>(</em><em>x</em><em>)</em></span>, and minimize this quantity using the Euler-Lagrange equations.
+</p>
+
+
+
+<p class="Subsubsection">
+ Implementation
+</p>
+
+
+
+<p class="Text">
+ Suppose we have curve parameterized by <span><em>t</em></span>, <span><span>(x(t), y(t))</span></span>.&nbsp;&nbsp;The potential energy associated with this curve is
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_12.gif" alt="Principle of Least Action MathML_12.gif" width="287" height="116" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Note that if we choose to factor <span><span><span class="doublestruck">d</span>s</span></span> the other way (for <span><em>y</em><em>'</em></span>), we get a mess.
+</p>
+
+
+
+<p class="Text">
+ Now we apply the Euler-Lagrange equation to <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>f</mi>
+  <mo>=</mo>
+  <mrow>
+   <mi>&lambda;</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>g</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>y</mi>
+   <mo>&InvisibleTimes;</mo>
+   <msqrt>
+    <mrow>
+     <mn>1</mn>
+     <mo>+</mo>
+     <msup>
+      <mrow>
+       <mo>(</mo>
+       <mrow>
+        <mi>x</mi>
+        <mo>'</mo>
+       </mrow>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+   </msqrt>
+  </mrow>
+ </mrow>
+</math></span></span> and change <span><em>t</em><em>&rarr;</em><em>y</em></span>, <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mover>
+   <mi>x</mi>
+   <mo>.</mo>
+  </mover>
+  <mo>&rightarrow;</mo>
+  <mrow>
+   <mi>x</mi>
+   <mo>'</mo>
+  </mrow>
+ </mrow>
+</math></span></span>.
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_13.gif" alt="Principle of Least Action MathML_13.gif" width="102" height="130" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ Since <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>f</mi>
+   </mrow>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>x</mi>
+   </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mn>0</mn>
+ </mrow>
+</math></span></span>, <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mtext> </mtext>
+  <mfrac>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mi>f</mi>
+   </mrow>
+   <mrow>
+    <mo>&PartialD;</mo>
+    <mrow>
+     <mi>x</mi>
+     <mo>'</mo>
+    </mrow>
+   </mrow>
+  </mfrac>
+ </mrow>
+</math></span></span> is constant, say <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>a</mi>
+  <mo>=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mrow>
+      <mi>&lambda;</mi>
+      <mo>&InvisibleTimes;</mo>
+      <mi>g</mi>
+     </mrow>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <mfrac>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mi>f</mi>
+     </mrow>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mrow>
+       <mi>x</mi>
+       <mo>'</mo>
+      </mrow>
+     </mrow>
+    </mfrac>
+   </mrow>
+   <mo>=</mo>
+   <mfrac>
+    <mrow>
+     <mi>y</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>x</mi>
+      <mo>'</mo>
+     </mrow>
+    </mrow>
+    <msqrt>
+     <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <mi>x</mi>
+         <mo>'</mo>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+    </msqrt>
+   </mfrac>
+  </mrow>
+ </mrow>
+</math></span></span>.&nbsp;&nbsp;Then
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mi>x</mi>
+   <mo>'</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+   <mfrac>
+    <mrow>
+     <mo>&DifferentialD;</mo>
+     <mi>x</mi>
+    </mrow>
+    <mrow>
+     <mo>&DifferentialD;</mo>
+     <mi>y</mi>
+    </mrow>
+   </mfrac>
+   <mo>=</mo>
+   <mrow>
+    <mo>&pm;</mo>
+    <mfrac>
+     <mi>a</mi>
+     <msqrt>
+      <mrow>
+       <msup>
+        <mi>y</mi>
+        <mn>2</mn>
+       </msup>
+       <mo>-</mo>
+       <msup>
+        <mi>a</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+     </msqrt>
+    </mfrac>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Using the fact that
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mrow>
+    <mo>&Integral;</mo>
+    <mfrac>
+     <mrow>
+      <mo>&DifferentialD;</mo>
+      <mi>y</mi>
+     </mrow>
+     <msqrt>
+      <mrow>
+       <msup>
+        <mi>y</mi>
+        <mn>2</mn>
+       </msup>
+       <mo>-</mo>
+       <msup>
+        <mi>a</mi>
+        <mn>2</mn>
+       </msup>
+      </mrow>
+     </msqrt>
+    </mfrac>
+   </mrow>
+   <mo>&#63449;</mo>
+   <mrow>
+    <mrow>
+     <msup>
+      <mi>cosh</mi>
+      <mrow>
+       <mo>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+     <mo>(</mo>
+     <mfrac>
+      <mi>y</mi>
+      <mi>a</mi>
+     </mfrac>
+     <mo>)</mo>
+    </mrow>
+    <mo>+</mo>
+    <mi>b</mi>
+   </mrow>
+  </mrow>
+  <mo>,</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ integration of <span><em>x</em><em>'</em></span> gives
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mi>x</mi>
+   <mo>&ApplyFunction;</mo>
+   <mo>(</mo>
+   <mi>y</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+   <mrow>
+    <mrow>
+     <mo>&pm;</mo>
+     <mi>a</mi>
+    </mrow>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <msup>
+      <mi>cosh</mi>
+      <mrow>
+       <mo>-</mo>
+       <mn>1</mn>
+      </mrow>
+     </msup>
+     <mo>(</mo>
+     <mfrac>
+      <mi>y</mi>
+      <mi>a</mi>
+     </mfrac>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>+</mo>
+   <mi>b</mi>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ where <span><em>b</em></span> is a constant of integration.
+</p>
+
+
+
+<p class="Text">
+ Plotting this for <span><em>a</em><em>=</em><em>1</em></span>, <span><em>b</em><em>=</em><em>0</em></span> gives:
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>Clear</mi>
+   <mo>[</mo>
+   <mi>y</mi>
+   <mo>]</mo>
+  </mrow>
+  <mo>;</mo>
+  <mrow>
+   <mi>Manipulate</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mi>ParametricPlot</mi>
+     <mo>[</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mrow>
+         <mo>{</mo>
+         <mrow>
+          <mrow>
+           <mrow>
+            <mrow>
+             <mo>-</mo>
+             <mi>a</mi>
+            </mrow>
+            <mo>&InvisibleTimes;</mo>
+            <mrow>
+             <mi>ArcCosh</mi>
+             <mo>[</mo>
+             <mfrac>
+              <mi>t</mi>
+              <mi>a</mi>
+             </mfrac>
+             <mo>]</mo>
+            </mrow>
+           </mrow>
+           <mo>+</mo>
+           <mi>b</mi>
+          </mrow>
+          <mo>,</mo>
+          <mi>t</mi>
+         </mrow>
+         <mo>}</mo>
+        </mrow>
+        <mo>,</mo>
+        <mrow>
+         <mo>{</mo>
+         <mrow>
+          <mrow>
+           <mrow>
+            <mi>a</mi>
+            <mo>&InvisibleTimes;</mo>
+            <mrow>
+             <mi>ArcCosh</mi>
+             <mo>[</mo>
+             <mfrac>
+              <mi>t</mi>
+              <mi>a</mi>
+             </mfrac>
+             <mo>]</mo>
+            </mrow>
+           </mrow>
+           <mo>+</mo>
+           <mi>b</mi>
+          </mrow>
+          <mo>,</mo>
+          <mi>t</mi>
+         </mrow>
+         <mo>}</mo>
+        </mrow>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>t</mi>
+        <mo>,</mo>
+        <mi>ymin</mi>
+        <mo>,</mo>
+        <mi>ymax</mi>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>PlotStyle</mi>
+       <mo>&rightarrow;</mo>
+       <mi>Black</mi>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mi>AspectRatio</mi>
+       <mo>&rightarrow;</mo>
+       <mi>Automatic</mi>
+      </mrow>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>a</mi>
+        <mo>,</mo>
+        <mn>1</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>-</mo>
+       <mn>5</mn>
+      </mrow>
+      <mo>,</mo>
+      <mn>5</mn>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>b</mi>
+        <mo>,</mo>
+        <mn>0</mn>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>-</mo>
+       <mn>5</mn>
+      </mrow>
+      <mo>,</mo>
+      <mn>5</mn>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>ymin</mi>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <msub>
+         <mi>y</mi>
+         <mi>min</mi>
+        </msub>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>-</mo>
+       <mn>5</mn>
+      </mrow>
+      <mo>,</mo>
+      <mn>5</mn>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+    <mo>,</mo>
+    <mrow>
+     <mo>{</mo>
+     <mrow>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>ymax</mi>
+        <mo>,</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <msub>
+         <mi>y</mi>
+         <mi>max</mi>
+        </msub>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>-</mo>
+       <mn>5</mn>
+      </mrow>
+      <mo>,</mo>
+      <mn>5</mn>
+     </mrow>
+     <mo>}</mo>
+    </mrow>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <script type="text/javascript" src="http://www.wolfram.com/cdf-player/plugin/v2.1/cdfplugin.js"></script>
+<script type="text/javascript">
+var cdf = new cdfplugin();
+cdf.embed('HTMLFiles/Principle of Least Action MathML_14.cdf', 0, 0);
+</script>
+</p>
+
+<p class="Section">
+ Problem: Bead on a Ring
+</p>
+
+
+
+<p class="Text">
+ From 8.033 Quiz #2
+</p>
+
+
+
+<p class="Subsection">
+ Problem
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_15.gif" alt="Principle of Least Action MathML_15.gif" width="596" height="415" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ A bead of mass <span><em>m</em></span> slides without friction on a circular hoop of radius <span><em>R</em></span>. The angle <span><em>&theta;</em></span> is defined so that when the bead is at the bottom of the hoop, <span><em>&theta;</em><em>=</em><em>0</em></span>. The hoop is spun about its vertical axis with angular velocity <span><em>&omega;</em></span>. Gravity acts downward with acceleration <span><em>g</em></span>.<br />Find an equation describing how <span><em>&theta;</em></span> evolves with time.<br />Find the minimum value of <span><em>&omega;</em></span> for the bead to be in equilibrium at some value of <span><em>&theta;</em></span> other than zero.<br />(&ldquo;equilibrium&rdquo; means that <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mover>
+  <mi>&theta;</mi>
+  <mo>.</mo>
+ </mover>
+</math></span></span> and <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mover>
+  <mi>&theta;</mi>
+  <mo>&#168;</mo>
+ </mover>
+</math></span></span> are both zero.) How large must <span><em>&omega;</em></span> be in order to make <span><span>&theta;=&pi;/2</span></span>?
+</p>
+
+
+
+<p class="Subsection">
+ Solution
+</p>
+
+
+
+<p class="Text">
+ The general Lagrangian for the object in Cartesian coordinates is
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>Clear</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>,</mo>
+    <mi>y</mi>
+    <mo>,</mo>
+    <mi>z</mi>
+    <mo>,</mo>
+    <mi>t</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>;</mo>
+  <mrow>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>L</mi>
+     <mo>=</mo>
+     <mrow>
+      <mrow>
+       <mfrac>
+        <mn>1</mn>
+        <mn>2</mn>
+       </mfrac>
+       <mo>&InvisibleTimes;</mo>
+       <mi>m</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <msup>
+          <mrow>
+           <mrow>
+            <mi>x</mi>
+            <mo>'</mo>
+           </mrow>
+           <mo>[</mo>
+           <mi>t</mi>
+           <mo>]</mo>
+          </mrow>
+          <mn>2</mn>
+         </msup>
+         <mo>+</mo>
+         <msup>
+          <mrow>
+           <mrow>
+            <mi>y</mi>
+            <mo>'</mo>
+           </mrow>
+           <mo>[</mo>
+           <mi>t</mi>
+           <mo>]</mo>
+          </mrow>
+          <mn>2</mn>
+         </msup>
+         <mo>+</mo>
+         <msup>
+          <mrow>
+           <mrow>
+            <mi>z</mi>
+            <mo>'</mo>
+           </mrow>
+           <mo>[</mo>
+           <mi>t</mi>
+           <mo>]</mo>
+          </mrow>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>-</mo>
+      <mrow>
+       <mi>m</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>g</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mrow>
+        <mi>z</mi>
+        <mo>[</mo>
+        <mi>t</mi>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>//</mo>
+   <mi>TraditionalForm</mi>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msup>
+      <mrow>
+       <msup>
+        <mi>x</mi>
+        <mo>&prime;</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>+</mo>
+     <msup>
+      <mrow>
+       <msup>
+        <mi>y</mi>
+        <mo>&prime;</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>+</mo>
+     <msup>
+      <mrow>
+       <msup>
+        <mi>z</mi>
+        <mo>&prime;</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>-</mo>
+  <mrow>
+   <mi>g</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mi>z</mi>
+    <mo>&ApplyFunction;</mo>
+    <mo>(</mo>
+    <mi>t</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Converting to polar coordinates, and using the constraints that <span><span>&phi;=&omega; t</span></span> and <span><em>r</em><em>=</em><em>R</em></span>, using the conversion
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_16.gif" alt="Principle of Least Action MathML_16.gif" width="112" height="63" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ gives
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action MathML_17.gif" alt="Principle of Least Action MathML_17.gif" width="1518" height="55" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>L</mi>
+  <mo>&#63449;</mo>
+  <mrow>
+   <mrow>
+    <mi>g</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>R</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mi>cos</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>&theta;</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>-</mo>
+   <mrow>
+    <mi>g</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>R</mi>
+   </mrow>
+   <mo>-</mo>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mn>4</mn>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>R</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&omega;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mi>cos</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mrow>
+      <mn>2</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&theta;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mn>2</mn>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mover>
+      <mi>&theta;</mi>
+      <mo>.</mo>
+     </mover>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>R</mi>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mn>4</mn>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>R</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&omega;</mi>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mn>0</mn>
+  <mo>&#63449;</mo>
+  <mrow>
+   <mfrac>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mi>L</mi>
+    </mrow>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mi>&theta;</mi>
+    </mrow>
+   </mfrac>
+   <mo>-</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <mo>&DifferentialD;</mo>
+     </mrow>
+     <mrow>
+      <mo>&DifferentialD;</mo>
+      <mi>t</mi>
+     </mrow>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <mfrac>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mi>L</mi>
+     </mrow>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mover>
+       <mi>&theta;</mi>
+       <mo>.</mo>
+      </mover>
+     </mrow>
+    </mfrac>
+   </mrow>
+  </mrow>
+  <mo>&#63449;</mo>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mrow>
+     <mi>g</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>m</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>R</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>R</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&omega;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mi>sin</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>&theta;</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mi>cos</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>&theta;</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>-</mo>
+   <mrow>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>R</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <msup>
+      <mi>&theta;</mi>
+      <mi>&prime;&prime;</mi>
+     </msup>
+     <mo>(</mo>
+     <mi>t</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <msup>
+    <mi>&theta;</mi>
+    <mi>&prime;&prime;</mi>
+   </msup>
+   <mo>(</mo>
+   <mi>t</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo>&#63449;</mo>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <mi>R</mi>
+     <mo>&InvisibleTimes;</mo>
+     <msup>
+      <mi>&omega;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>&theta;</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>cos</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>&theta;</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>-</mo>
+    <mrow>
+     <mi>g</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>&theta;</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mi>R</mi>
+  </mfrac>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Finding the minimum value of <span><em>&omega;</em></span> for the bead to be in equilibrium gives
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action MathML_18.gif" alt="Principle of Least Action MathML_18.gif" width="1021" height="35" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <mi>R</mi>
+     <mo>&InvisibleTimes;</mo>
+     <msup>
+      <mi>&omega;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>&theta;</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>cos</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>&theta;</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>-</mo>
+    <mrow>
+     <mi>g</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>&theta;</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mi>R</mi>
+  </mfrac>
+  <mo>&#63449;</mo>
+  <mn>0</mn>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mi>cos</mi>
+   <mo>&ApplyFunction;</mo>
+   <mo>(</mo>
+   <mi>&theta;</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo>&#63449;</mo>
+  <mfrac>
+   <mi>g</mi>
+   <mrow>
+    <mi>R</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&omega;</mi>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </mfrac>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ In order for this to have a solution, we must have 
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>&omega;</mi>
+  <mo>&GreaterEqual;</mo>
+  <msqrt>
+   <mfrac>
+    <mi>g</mi>
+    <mi>R</mi>
+   </mfrac>
+  </msqrt>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ If <span><span>&theta;=&pi;/2</span></span>, then <span><span>cos(&theta;)=0</span></span>, so <span><em>&omega;</em><em>=</em><em>&infin;</em></span>.
+</p>
+
+
+
+<p class="Section">
+ Problem 11.8: K &amp; K 8.12
+</p>
+
+
+
+<p class="Subsection">
+ Problem
+</p>
+
+
+
+<p class="Text">
+ A pendulum is rigidly fixed to an axle held by two supports so that it can only swing in a plane perpendicular to the axle. The pendulum consists of a mass <span><em>m</em></span> attached to a massless rod of length <span><em>l</em></span>. The supports are mounted on a platform which rotates with constant angular velocity <span><em>&Omega;</em></span>. Find the pendulum&rsquo;s frequency assuming the amplitude is small.
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_19.gif" alt="Principle of Least Action MathML_19.gif" width="250" height="159" style="vertical-align:middle" />
+</p>
+
+<p class="Subsection">
+ Solution by torque
+</p>
+
+
+
+<p class="Text">
+ (From the problem set solutions)
+</p>
+
+
+
+<p class='Input' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_20.gif" alt="Principle of Least Action MathML_20.gif" width="465" height="288" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ The torque about the pivot point is
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mover>
+    <mi>&tau;</mi>
+    <mo>&RightVector;</mo>
+   </mover>
+   <mi>p</mi>
+  </msub>
+  <mo>&#63449;</mo>
+  <mrow>
+   <mover>
+    <mi>&alpha;</mi>
+    <mo>&RightVector;</mo>
+   </mover>
+   <mo>&InvisibleTimes;</mo>
+   <msub>
+    <mi>I</mi>
+    <mi>p</mi>
+   </msub>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class='DisplayFormulaNumbered' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mover>
+   <mi>k</mi>
+   <mo>^</mo>
+  </mover>
+  <mo>:</mo>
+  <mtext>         </mtext>
+  <mrow>
+   <mrow>
+    <mrow>
+     <mrow>
+      <mo>-</mo>
+      <mi>g</mi>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mi>&ell;</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>m</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>+</mo>
+    <mrow>
+     <mi>&ell;</mi>
+     <mo>&InvisibleTimes;</mo>
+     <msub>
+      <mi>F</mi>
+      <mi>cent</mi>
+     </msub>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>cos</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mo>&#63449;</mo>
+   <mrow>
+    <mover>
+     <mi>&theta;</mi>
+     <mo>&#168;</mo>
+    </mover>
+    <mo>&InvisibleTimes;</mo>
+    <msub>
+     <mi>I</mi>
+     <mi>p</mi>
+    </msub>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ The centrifugal effective force is
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msub>
+   <mi>F</mi>
+   <mi>cent</mi>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>&ell;</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>&InvisibleTimes;</mo>
+   <msup>
+    <mi>&Omega;</mi>
+    <mn>2</mn>
+   </msup>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ For small angles, <span><span>sin(&theta;)=&theta;</span></span>, <span><span>cos(&theta;)=1</span></span>.&nbsp;&nbsp;Then equation (1) becomes
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_21.gif" alt="Principle of Least Action MathML_21.gif" width="156" height="99" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ If <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msup>
+   <mi>&Omega;</mi>
+   <mn>2</mn>
+  </msup>
+  <mo>&gt;</mo>
+  <mfrac>
+   <mi>g</mi>
+   <mi>&ell;</mi>
+  </mfrac>
+ </mrow>
+</math></span></span>, the motion is no longer harmonic.
+</p>
+
+
+
+<p class="Subsection">
+ Solution by least action
+</p>
+
+
+
+<p class="Text">
+ The general Lagrangian for the object in Cartesian coordinates is
+</p>
+
+
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <mi>Clear</mi>
+   <mo>[</mo>
+   <mrow>
+    <mi>x</mi>
+    <mo>,</mo>
+    <mi>y</mi>
+    <mo>,</mo>
+    <mi>z</mi>
+    <mo>,</mo>
+    <mi>t</mi>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+  <mo>;</mo>
+  <mrow>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <mi>L</mi>
+     <mo>=</mo>
+     <mrow>
+      <mrow>
+       <mfrac>
+        <mn>1</mn>
+        <mn>2</mn>
+       </mfrac>
+       <mo>&InvisibleTimes;</mo>
+       <mi>m</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mrow>
+        <mo>(</mo>
+        <mrow>
+         <msup>
+          <mrow>
+           <mrow>
+            <mi>x</mi>
+            <mo>'</mo>
+           </mrow>
+           <mo>[</mo>
+           <mi>t</mi>
+           <mo>]</mo>
+          </mrow>
+          <mn>2</mn>
+         </msup>
+         <mo>+</mo>
+         <msup>
+          <mrow>
+           <mrow>
+            <mi>y</mi>
+            <mo>'</mo>
+           </mrow>
+           <mo>[</mo>
+           <mi>t</mi>
+           <mo>]</mo>
+          </mrow>
+          <mn>2</mn>
+         </msup>
+         <mo>+</mo>
+         <msup>
+          <mrow>
+           <mrow>
+            <mi>z</mi>
+            <mo>'</mo>
+           </mrow>
+           <mo>[</mo>
+           <mi>t</mi>
+           <mo>]</mo>
+          </mrow>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+        <mo>)</mo>
+       </mrow>
+      </mrow>
+      <mo>-</mo>
+      <mrow>
+       <mi>m</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mi>g</mi>
+       <mo>&InvisibleTimes;</mo>
+       <mrow>
+        <mi>z</mi>
+        <mo>[</mo>
+        <mi>t</mi>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+   <mo>//</mo>
+   <mi>TraditionalForm</mi>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <mfrac>
+    <mn>1</mn>
+    <mn>2</mn>
+   </mfrac>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mo>(</mo>
+    <mrow>
+     <msup>
+      <mrow>
+       <msup>
+        <mi>x</mi>
+        <mo>&prime;</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>+</mo>
+     <msup>
+      <mrow>
+       <msup>
+        <mi>y</mi>
+        <mo>&prime;</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+     <mo>+</mo>
+     <msup>
+      <mrow>
+       <msup>
+        <mi>z</mi>
+        <mo>&prime;</mo>
+       </msup>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mn>2</mn>
+     </msup>
+    </mrow>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+  <mo>-</mo>
+  <mrow>
+   <mi>g</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mi>m</mi>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mi>z</mi>
+    <mo>&ApplyFunction;</mo>
+    <mo>(</mo>
+    <mi>t</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Converting to polar coordinates, and using the constraints that <span><span>&phi;=&Omega; t</span></span> and <span><em>r</em><em>=</em><em>&#8467;</em></span>, using the conversion
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <img src="HTMLFiles/Principle of Least Action MathML_22.gif" alt="Principle of Least Action MathML_22.gif" width="108" height="63" style="vertical-align:middle" />
+</p>
+
+<p class="Text">
+ gives
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action MathML_23.gif" alt="Principle of Least Action MathML_23.gif" width="1511" height="55" style="vertical-align:middle" />
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>L</mi>
+  <mo>&#63449;</mo>
+  <mrow>
+   <mrow>
+    <mi>g</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>&ell;</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mi>cos</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>&theta;</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>-</mo>
+   <mrow>
+    <mi>g</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mi>&ell;</mi>
+   </mrow>
+   <mo>-</mo>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mn>4</mn>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&Omega;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&ell;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mi>cos</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mrow>
+      <mn>2</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&theta;</mi>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mn>2</mn>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mover>
+      <mi>&theta;</mi>
+      <mo>.</mo>
+     </mover>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&ell;</mi>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mfrac>
+     <mn>1</mn>
+     <mn>4</mn>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&Omega;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&ell;</mi>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mn>0</mn>
+  <mo>&#63449;</mo>
+  <mrow>
+   <mfrac>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mi>L</mi>
+    </mrow>
+    <mrow>
+     <mo>&PartialD;</mo>
+     <mi>&theta;</mi>
+    </mrow>
+   </mfrac>
+   <mo>-</mo>
+   <mrow>
+    <mfrac>
+     <mrow>
+      <mo>&DifferentialD;</mo>
+     </mrow>
+     <mrow>
+      <mo>&DifferentialD;</mo>
+      <mi>t</mi>
+     </mrow>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <mfrac>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mi>L</mi>
+     </mrow>
+     <mrow>
+      <mo>&PartialD;</mo>
+      <mover>
+       <mi>&theta;</mi>
+       <mo>.</mo>
+      </mover>
+     </mrow>
+    </mfrac>
+   </mrow>
+  </mrow>
+  <mo>&#63449;</mo>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mrow>
+     <mi>g</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>m</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mi>&ell;</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mi>&theta;</mi>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mo>-</mo>
+   <mrow>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&ell;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <msup>
+      <mi>&theta;</mi>
+      <mi>&prime;&prime;</mi>
+     </msup>
+     <mo>(</mo>
+     <mi>t</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>+</mo>
+   <mrow>
+    <mi>m</mi>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&Omega;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+     <mi>&ell;</mi>
+     <mn>2</mn>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mi>sin</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>&theta;</mi>
+     <mo>)</mo>
+    </mrow>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+     <mi>cos</mi>
+     <mo>&ApplyFunction;</mo>
+     <mo>(</mo>
+     <mi>&theta;</mi>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <msup>
+    <mi>&theta;</mi>
+    <mi>&prime;&prime;</mi>
+   </msup>
+   <mo>(</mo>
+   <mi>t</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo>&#63449;</mo>
+  <mfrac>
+   <mrow>
+    <mrow>
+     <msup>
+      <mi>&Omega;</mi>
+      <mn>2</mn>
+     </msup>
+     <mo>&InvisibleTimes;</mo>
+     <mi>&ell;</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>&theta;</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>cos</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>&theta;</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+    <mo>-</mo>
+    <mrow>
+     <mi>g</mi>
+     <mo>&InvisibleTimes;</mo>
+     <mrow>
+      <mi>sin</mi>
+      <mo>&ApplyFunction;</mo>
+      <mo>(</mo>
+      <mrow>
+       <mi>&theta;</mi>
+       <mo>&ApplyFunction;</mo>
+       <mo>(</mo>
+       <mi>t</mi>
+       <mo>)</mo>
+      </mrow>
+      <mo>)</mo>
+     </mrow>
+    </mrow>
+   </mrow>
+   <mi>&ell;</mi>
+  </mfrac>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ Note that this is, after minor changes of variable, the <span style='font-style: italic;'>exact</span> same equation that we found in the previous problem.&nbsp;&nbsp;We should(&rsquo;ve) expect(ed) this.<br />Making the first order approximation that <span><em>&theta;</em><em>&asymp;</em><em>0</em></span> (Taylor expanding around <span><em>&theta;</em><em>=</em><em>0</em></span> to the first order), we get 
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mrow>
+   <msup>
+    <mi>&theta;</mi>
+    <mi>&prime;&prime;</mi>
+   </msup>
+   <mo>(</mo>
+   <mi>t</mi>
+   <mo>)</mo>
+  </mrow>
+  <mo>&#63449;</mo>
+  <mrow>
+   <mrow>
+    <mo>-</mo>
+    <mrow>
+     <mo>(</mo>
+     <mrow>
+      <mfrac>
+       <mi>g</mi>
+       <mi>&ell;</mi>
+      </mfrac>
+      <mo>-</mo>
+      <msup>
+       <mi>&Omega;</mi>
+       <mn>2</mn>
+      </msup>
+     </mrow>
+     <mo>)</mo>
+    </mrow>
+   </mrow>
+   <mo>&InvisibleTimes;</mo>
+   <mrow>
+    <mi>&theta;</mi>
+    <mo>&ApplyFunction;</mo>
+    <mo>(</mo>
+    <mi>t</mi>
+    <mo>)</mo>
+   </mrow>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ This is the differential equation for a harmonic oscillator, with 
+</p>
+
+
+
+<p class='DisplayFormula' style='text-align: center;'>
+ <math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <mi>&omega;</mi>
+  <mo>=</mo>
+  <msqrt>
+   <mrow>
+    <mfrac>
+     <mi>g</mi>
+     <mi>&ell;</mi>
+    </mfrac>
+    <mo>-</mo>
+    <msup>
+     <mi>&Omega;</mi>
+     <mn>2</mn>
+    </msup>
+   </mrow>
+  </msqrt>
+ </mrow>
+</math>
+</p>
+
+<p class="Text">
+ If <span><span><math xmlns='http://www.w3.org/1998/Math/MathML'
+    mathematica:form='TraditionalForm'
+    xmlns:mathematica='http://www.wolfram.com/XML/'>
+ <mrow>
+  <msup>
+   <mi>&Omega;</mi>
+   <mn>2</mn>
+  </msup>
+  <mo>&gt;</mo>
+  <mfrac>
+   <mi>g</mi>
+   <mi>&ell;</mi>
+  </mfrac>
+ </mrow>
+</math></span></span>, the motion is no longer harmonic.
+</p>
+
+
+
+<p class="Input">
+ <img src="HTMLFiles/Principle of Least Action MathML_24.gif" alt="Principle of Least Action MathML_24.gif" width="1447" height="35" style="vertical-align:middle" />
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>
